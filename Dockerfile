@@ -1,21 +1,11 @@
-# Use an official Node.js base image with Alpine Linux
-FROM node:14-alpine
+FROM python:3.6
 
-# Set the working directory in the container
-WORKDIR /usr/src/app
+RUN pip install flask
 
-# Copy package.json and package-lock.json to the container
-COPY package*.json ./
+COPY . /opt/
 
-# Install application dependencies
-RUN npm install
+EXPOSE 5000
 
-# Copy the application code to the container
-COPY . .
+WORKDIR /opt
 
-# Expose the port your app will run on (adjust as needed)
-EXPOSE 3000
-
-# Define the command to run your application
-CMD ["npm", "start"]
-
+ENTRYPOINT ["python", "app.py"]
