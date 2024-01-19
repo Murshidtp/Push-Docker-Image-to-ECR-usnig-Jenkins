@@ -3,7 +3,7 @@ pipeline {
     environment {
         AWS_ACCOUNT_ID="218463550458"
         AWS_DEFAULT_REGION="ap-south-1"
-        IMAGE_REPO_NAME="react-app"
+        IMAGE_REPO_NAME="flask-app"
         IMAGE_TAG="latest"
         REPOSITORY_URI = "218463550458.dkr.ecr.ap-south-1.amazonaws.com/react-app"
     }
