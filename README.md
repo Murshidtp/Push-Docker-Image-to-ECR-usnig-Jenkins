@@ -19,7 +19,7 @@ The project follows the steps below:
 Make sure you have the following tools and accounts set up:
 
 - Python installed on your machine.
-- Docker installed ([Docker Installation Guide](https://docs.docker.com/get-docker/)).
+- Docker installed on your machine.
 - Jenkins installed and configured.
 - AWS account with ECR repository created.
 - Git for version control
